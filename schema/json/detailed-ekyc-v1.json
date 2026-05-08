@@ -1,8 +1,8 @@
 {
   "$metadata": {
     "uris": {
-      "jsonLdContext": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld",
-      "jsonSchema": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json/detailed-ekyc-v1.json"
+      "jsonLdContext": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld",
+      "jsonSchema": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.json"
     },
     "version": "1.0",
     "type": "DetailedEKYC"

@@ -9,7 +9,7 @@
         "@context": {
           "@propagate": true,
           "@protected": true,
-          "detailed-ekyc-vocab": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/detailed-ekyc.md#",
+          "detailed-ekyc-vocab": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/detailed-ekyc.md#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "fullName": {
             "@id": "detailed-ekyc-vocab:fullName",
@@ -36,7 +36,7 @@
             "@type": "xsd:string"
           }
         },
-        "@id": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld#DetailedEKYC"
+        "@id": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld#DetailedEKYC"
       }
     }
   ]

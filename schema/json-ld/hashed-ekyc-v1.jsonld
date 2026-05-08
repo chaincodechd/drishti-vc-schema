@@ -9,14 +9,14 @@
         "@context": {
           "@propagate": true,
           "@protected": true,
-          "hashed-ekyc-vocab": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/hashed-ekyc.md#",
+          "hashed-ekyc-vocab": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/hashed-ekyc.md#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "dataHash": {
             "@id": "hashed-ekyc-vocab:dataHash",
             "@type": "xsd:string"
           }
         },
-        "@id": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json-ld/hashed-ekyc-v1.jsonld#HashedEKYC"
+        "@id": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/hashed-ekyc-v1.jsonld#HashedEKYC"
       }
     }
   ]
