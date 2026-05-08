@@ -2,7 +2,7 @@
   "$metadata": {
     "uris": {
       "jsonLdContext": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/hashed-ekyc-v1.jsonld",
-      "jsonSchema": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json-ld/hashed-ekyc-v1.json"
+      "jsonSchema": "https://raw.githubusercontent.com/chaincodechd/drishti-vc-schema/refs/heads/main/schema/json/hashed-ekyc-v1.json"
     },
     "version": "1.0",
     "type": "HashedEKYC"
