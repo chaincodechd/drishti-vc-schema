@@ -1,0 +1,146 @@
+{
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld",
+      "jsonSchema": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json/detailed-ekyc-v1.json"
+    },
+    "version": "1.0",
+    "type": "DetailedEKYC"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "DetailedEKYC schema",
+  "title": "DetailedEKYC schema",
+  "properties": {
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        },
+        "fullName": {
+          "description": "Full name of the user",
+          "title": "Full Name",
+          "type": "string",
+          "minLength": 2
+        },
+        "mobileNumber": {
+          "description": "Mobile number with country code",
+          "title": "Mobile Number",
+          "type": "string",
+          "pattern": "^\\+?[1-9]\\d{1,14}$"
+        },
+        "age": {
+          "description": "Age of the user",
+          "title": "Age",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 150
+        },
+        "gender": {
+          "description": "Gender of the user",
+          "title": "Gender",
+          "type": "string",
+          "enum": ["Male", "Female", "Other"]
+        },
+        "residentialAddress": {
+          "description": "Residential address",
+          "title": "Residential Address",
+          "type": "string",
+          "minLength": 5
+        },
+        "dataHash": {
+          "description": "SHA-256 hash of the complete detailed EKYC data",
+          "title": "Data Hash",
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{64}$"
+        }
+      },
+      "required": [
+        "fullName",
+        "mobileNumber",
+        "age",
+        "gender",
+        "residentialAddress",
+        "dataHash"
+      ],
+      "type": "object"
+    },
+    "@context": {
+      "type": ["string", "array", "object"]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": ["string", "object"],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": ["id"]
+    },
+    "type": {
+      "type": ["string", "array"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "type"],
+      "type": "object"
+    },
+    "credentialStatus": {
+      "description": "Allows the discovery of information about the current status of the credential, such as whether it is suspended or revoked.",
+      "title": "Credential Status",
+      "properties": {
+        "id": {
+          "description": "Id URL of the credentialStatus.",
+          "title": "Id",
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "description": "Expresses the credential status type (method). The value should provide enough information to determine the current status of the credential.",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": ["id", "type"],
+      "type": "object"
+    }
+  },
+  "required": [
+    "credentialSubject",
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSchema"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,43 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "DetailedEKYC": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "detailed-ekyc-vocab": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/detailed-ekyc.md#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "fullName": {
+            "@id": "detailed-ekyc-vocab:fullName",
+            "@type": "xsd:string"
+          },
+          "mobileNumber": {
+            "@id": "detailed-ekyc-vocab:mobileNumber",
+            "@type": "xsd:string"
+          },
+          "age": {
+            "@id": "detailed-ekyc-vocab:age",
+            "@type": "xsd:integer"
+          },
+          "gender": {
+            "@id": "detailed-ekyc-vocab:gender",
+            "@type": "xsd:string"
+          },
+          "residentialAddress": {
+            "@id": "detailed-ekyc-vocab:residentialAddress",
+            "@type": "xsd:string"
+          },
+          "dataHash": {
+            "@id": "detailed-ekyc-vocab:dataHash",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "https://raw.githubusercontent.com/chaincodechd/railway-workforce-vc-schema/refs/heads/main/schema/json-ld/detailed-ekyc-v1.jsonld#DetailedEKYC"
+      }
+    }
+  ]
+}
